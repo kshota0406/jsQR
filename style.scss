@@ -1,0 +1,62 @@
+@keyframes fadeoutin {
+  0% {
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.video-section {
+  padding: 10px;
+
+  video {
+    display: none;
+  }
+
+  canvas {
+    display: block;
+  }
+
+  video, canvas {
+    width: 60%;
+    margin: auto;
+
+    opacity: 1;
+
+    &.fadeoutin {
+      animation-name: fadeoutin;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.player-section {
+  text-align: center;
+
+  button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+}
+
+.result-section {
+  text-align: center;
+
+  button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    text-wrap: none;
+    box-sizing: border-box;
+  }
+}

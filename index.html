@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <title>Lightning QR Reader for Web</title>
+  <link rel="stylesheet" href="style.scss">
+  <script src="app.ts"></script>
+</head>
+<body>
+
+<h1>Lightning QR Reader</h1>
+<p>Read QR codes continuously. Feedback to <a href="https://twitter.com/zaru">@zaru</a></p>
+
+<div class="video-section">
+  <video id="video"></video>
+  <canvas id="canvas"></canvas>
+</div>
+
+<div class="result-section">
+  <button id="copy">Copy</button><br>
+  <textarea id="result"></textarea>
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157043019-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157043019-1');
+</script>
+
+</body>
+</html>
